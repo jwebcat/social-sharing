@@ -5,42 +5,115 @@
     <title>Social Sharing - Social sharing links and buttons without the bloat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- stylesheets -->
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="kraken.css" type="text/css" />
 
-    <!-- HTML5 Shim for IE -->
-    <!--[if IE]>
+    <!-- HTML5 Shim for IE 6-8 -->
+    <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
-	<section class="container">
+	<section class="space-bottom bg-gray">
+	    <article class="container text-center">
 
-	    <h1 style="text-align: center; font-size: 3em;">Social Sharing</h1>
-	    <p style="text-align: center; font-size: 1.5em;">Add social sharing links and buttons without the bloat.</p>
+            <h1 class="text-taller no-space-bottom"><i class="icon-logo"></i> Social Sharing</h1>
+            <p class="text-tall text-muted">Add social sharing links and buttons without the bloat.</p>
+
+	        <p><a class="btn btn-blue btn-jumbo" href="https://github.com/cferdinandi/social-sharing/archive/master.zip">Download Social Sharing</a></p>
+
+	        <p>
+	            <span class="text-small">
+	                <a href="https://github.com/cferdinandi/social-sharing"><i class="icon-github"></i> GitHub Project</a>
+	                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                <a href="#more"><i class="icon-docs"></i> Getting Started</a>
+                </span>
+            </p>
+
+        </article>
+    </section>
+
+	<section class="space-bottom">
+	    <article class="container">
+
+	        <h1 class="text-center" id="more">How It Works</h1>
+
+            <p>The widgets provided by Twitter, Facebook, and other services require numerous HTTP requests and can really hurt the performance of your sites and apps.</p>
+
+            <p>These simple CSS and HTML snippets make it easy for you to go social - without hurting site performance.</p>
+
+	        <hr>
 
 
-        <h2>Social Buttons</h2>
+	        <h1 class="text-center">Social Buttons</h1>
 
-        <p>
-            <button class="btn btn-tweet">Tweet</button>
-            <button class="btn btn-facebook">Share</button>
-            <button class="btn btn-google">Google+</button>
-            <button class="btn btn-linkedin">LinkedIn</button>
-        </p>
+            <p>A few simple classes turn <code>button</code> and <code>a</code> elements into branded social media buttons.</p>
+
+            <p>
+                <button class="btn btn-tweet">Tweet</button>
+                <button class="btn btn-facebook">Share</button>
+                <button class="btn btn-google">Google+</button>
+                <button class="btn btn-linkedin">LinkedIn</button>
+            </p>
+
+            <pre>&lt;a class="btn btn-tweet" href="#"&gt;&lt;i class="icon-twitter"&gt;&lt;/i&gt; Tweet&lt;/a&gt;
+&lt;a class="btn btn-facebook" href="#"&gt;&lt;i class="icon-facebook"&gt;&lt;/i&gt; Share&lt;/a&gt;
+&lt;a class="btn btn-google" href="#"&gt;&lt;i class="icon-google"&gt;&lt;/i&gt; Google+&lt;/a&gt;
+&lt;a class="btn btn-linkedin" href="#"&gt;&lt;i class="icon-linkedin"&gt;&lt;/i&gt; LinkedIn&lt;/a&gt;</pre>
+
+	        <hr>
 
 
-        <h2>Sharing Links</h2>
+	        <h1 class="text-center">Sharing Links</h1>
 
-        <p><a target="_blank" href="https://twitter.com/intent/tweet?text=YOUR-TITLE&url=YOUR-URL&via=TWITTER-HANDLE">Twitter</a></p>
+            <p>To include sharing links for Twitter, Facebook, Google+ and LinkedIn, just add your URL's and titles where indicated in these snippets.</p>
 
-        <p><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=YOUR-URL">Facebook</a></p>
+            <p>Make sure to replace spaces with <code>%20</code> in your article and page titles.</p>
 
-        <p><a target="_blank" href="https://plus.google.com/share?url=YOUR-URL">Google+</a></p>
+            <p><strong>Twitter</strong></p>
 
-        <p><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=YOUR-URL&title=YOUR-TITLE&summary=YOUR-SUMMARY&source=YOUR-URL">LinkedIn</a></p>
+            <pre>&lt;a target="_blank" href="https://twitter.com/intent/tweet?text=YOUR-TITLE&url=YOUR-URL&via=TWITTER-HANDLE"&gt;&lt;i class="icon-twitter"&gt;&lt;/i&gt; Twitter&lt;/a&gt;</pre>
 
+            
+            <p><strong>Facebook</strong></p>
+
+            <pre>&lt;a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=YOUR-URL"&gt;&lt;i class="icon-facebook"&gt;&lt;/i&gt; Facebook&lt;/a&gt;</pre>
+
+            
+            <p><strong>Google+</strong></p>
+
+            <pre>&lt;a target="_blank" href="https://plus.google.com/share?url=YOUR-URL"&gt;&lt;i class="icon-google"&gt;&lt;/i&gt; Google+&lt;/a&gt;</pre>
+
+            
+            <p><strong>LinkedIn</strong></p>
+
+            <pre>&lt;a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=YOUR-URL&title=YOUR-TITLE&summary=YOUR-SUMMARY&source=YOUR-URL"&gt;&lt;i class="icon-linkedin"&gt;&lt;/i&gt; LinkedIn&lt;/a&gt;</pre>
+
+            <hr>
+
+            <h1 class="text-center">Adding Icons & Expanded Sharing Options</h1>
+
+            <p>To add icons to your share links, try using <a href="http://gomakethings.com/icon-fonts/">icon fonts</a>.</p>
+
+            <p>If you'd prefer to offer a single sharing icon that reveals all sharing options, also include <a href="http://cferdinandi.github.com/modals/">Modals</a> or <a href="http://cferdinandi.github.com/houdini/">Houdini</a>.</p>
+
+        </article>
 	</section>
+
+	<footer class="bg-gray">
+        <article class="container">
+
+            <p class="text-small text-muted text-center">Built by <a href="http://gomakethings.com">Chris Ferdinandi</a>. Licensed under <a href="http://www.wtfpl.net/">WTFPL</a>.</p>
+
+            <p class="text-small text-muted text-center">Social Sharing is an add-on for <a href="http://cferdinandi.github.com/kraken/">Kraken</a>, a lightweight, mobile-first boilerplate for front-end web developers. It works great as a standalone product, too.</p>
+
+        </article>
+	</footer>
+
+
+    <!-- Javascript -->
+    <script type='text/javascript' src='js/kraken.js'></script>
 
 </body>
 </html>
