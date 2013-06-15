@@ -1,3 +1,8 @@
+// ----------------------------------------
+// ------ import config ------
+// ----------------------------------------
+@import "config";
+
 /* =============================================================
 
     Social Sharing v2.0
@@ -99,7 +104,7 @@ a .btn:hover {
 .btn-tweet:hover,
 %btn-tweet:hover,
 a .btn-tweet:hover {
-    background-color: $btn-tweet-border-bg-color;
+    background-color: $btn-tweet-bg-hover-color;
     border-color: $btn-tweet-border-hover-color;
 }
 
